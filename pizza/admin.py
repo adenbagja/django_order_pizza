@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+#import model pizza and size
+from .models import Pizza, Size
+
+# add to dashboard admin
+admin.site.register(Pizza)
+admin.site.register(Size)
