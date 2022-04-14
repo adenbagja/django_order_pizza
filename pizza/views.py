@@ -15,5 +15,4 @@ def order(request):
             new_form = PizzaForm()
             return render(request, 'pizza/order.html', {'pizzaform': new_form, 'note':note})
     else:
-        form = PizzaForm()
         return render(request, 'pizza/order.html', {'pizzaform': form}) 
