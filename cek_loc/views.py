@@ -43,7 +43,7 @@ def orders(request):
     if request.method == 'POST':
         filled_form = SearchForm(request.POST)
         if filled_form.is_valid():
-            baseurl = "https://www.google.com/search?q=beli+%s&sxsrf=APq-WBt4jLZxrfwaRP4YeYUhlfB-EWkTlw:1649653964236&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjEnan0n4v3AhUNRmwGHTIVDlQQ_AUoAnoECAEQBA&biw=1365&bih=937&dpr=1"%(filled_form.cleaned_data['s'])
+            baseurl = "https://www.google.com/search?q=beli+%s&sa=X&biw=1920&bih=880&tbm=shop&sxsrf=APq-WBthh6vre95oa-9ef0cSMsChCA6SAw:1649941428917&tbs=p_ord:p&ei=tBtYYv-gN52h4t4P47yHSA&ved=0ahUKEwj_ypTmzpP3AhWdkNgFHWPeAQkQuw0IkQcoAg"%(filled_form.cleaned_data['s'])
             headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0"}
             r = requests.get(url=baseurl, headers=headers)
             r_images = requests.get(url=baseurl)
@@ -61,18 +61,20 @@ def orders(request):
             #find product links
             for item in productlist:
                 for link in item.find_all('a', href=True):
+                    # print(link['href'])
                     productlinks.append("https://google.com"+link['href'])
 
             #find product images
             productimages = [] 
             for item in soup_for_image.find_all('img'):
-                productimages.append(item['src'])
+                print(item['src'])
+                if "data:image/svg+xml" not in item['src']:
+                    productimages.append(item.get('src'))
 
             #find product price
             productprices = []
             product_prices = soup.find_all('span', class_='a8Pemb OFFNJ')
             for prices in product_prices:
-                print(prices.text)
                 productprices.append(prices.text)
 
             #find product name

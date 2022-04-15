@@ -35,21 +35,27 @@
 #                 print(image['src'])
 
 
-# import requests 
-# from bs4 import BeautifulSoup 
+import requests 
+from bs4 import BeautifulSoup 
     
-# def getdata(url): 
-#     r = requests.get(url) 
-#     return r.text 
+def getdata(url): 
+    headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0"}
+    r = requests.get(url, headers=headers) 
+    return r.text 
     
-# htmldata = getdata("https://www.google.com/search?q=beli+anjing&sxsrf=APq-WBt4jLZxrfwaRP4YeYUhlfB-EWkTlw:1649653964236&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjEnan0n4v3AhUNRmwGHTIVDlQQ_AUoAnoECAEQBA&biw=1365&bih=937&dpr=1") 
-# soup = BeautifulSoup(htmldata, 'html.parser') 
-# for item in soup.find_all('img'):
-#     print(item['src'])
+htmldata = getdata("https://www.tokopedia.com/search?st=product&q=kucing&srp_component_id=02.01.00.00&navsource=home") 
+soup = BeautifulSoup(htmldata, 'html.parser') 
+productimages = soup.find_all('div', class_='responsive css-1eg7f6s')
+# print(productimages)
+for item in productimages:
+    print(item)
+    for item2 in item.find('img'):
+    #     print(item2['src'])
+#         print(item2.get('src'))
 
-from re import sub
-from decimal import Decimal
+# from re import sub
+# from decimal import Decimal
 
-money = '$6,150,593.22'
-value = Decimal(sub(r'[^\d.]', '', money))
-print(value)
+# money = '$6,150,593.22'
+# value = Decimal(sub(r'[^\d.]', '', money))
+# print(value)
