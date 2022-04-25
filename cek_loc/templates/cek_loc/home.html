@@ -2,6 +2,7 @@
     {{ day }}
     <P></P>
 {% endfor %} -->
+{% load humanize %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -67,18 +68,18 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    {% for link,price, image, name in data %}
+                    {% for link , name , price, image in data %}
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="{{image}}" alt="..."   />
+                            <img class="card-img-top" src="{{image}}" alt="..."  width="100" height="200" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">{{name}}</h5>
                                     <!-- Product price-->
-                                    {{price}}
+                                    Rp. {{price|intcomma}}
                                 </div>
                             </div>
                             <!-- Product actions-->

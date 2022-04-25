@@ -10,8 +10,7 @@ from .models import Pizza, Size
 
 # make form pizza from models.py
 class PizzaForm(forms.ModelForm):
-
-
+    
     class Meta:
         model = Pizza
         fields = ['topping1', 'topping2', 'size']

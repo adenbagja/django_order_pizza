@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pizza',
-    'cek_loc'
+    'cek_loc',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
