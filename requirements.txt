@@ -71,7 +71,7 @@ prompt-toolkit==3.0.28
 psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pyaxmlparser==0.3.26
-pycares==4.1.2
+pycares==4.2.0
 pychalk==2.0.1
 pycparser==2.20
 pydantic==1.8.2
