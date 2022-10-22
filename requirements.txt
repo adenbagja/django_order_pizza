@@ -54,7 +54,7 @@ jira==2.0.0
 limiter==0.1.2
 limits==1.5.1
 litecli==1.6.0
-lxml==4.6.4
+lxml==4.9.1
 MarkupSafe==1.1.1
 marshmallow==3.14.1
 marshmallow-enum==1.5.1
@@ -65,7 +65,7 @@ oauthlib==3.1.0
 objection==1.11.0
 pbr==5.5.1
 pexpect==4.8.0
-Pillow==9.1.0
+Pillow==9.1.1
 platformdirs==2.5.1
 prompt-toolkit==3.0.28
 psycopg2-binary==2.9.3
@@ -111,7 +111,7 @@ typing-inspect==0.7.1
 typing_extensions==4.0.0
 tzdata==2021.5
 ujson==4.3.0
-urllib3==1.26.2
+urllib3==1.26.5
 uvicorn==0.15.0
 virtualenv==20.13.1
 wcwidth==0.2.5
