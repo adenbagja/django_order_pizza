@@ -100,7 +100,7 @@ slowapi==0.1.5
 sniffio==1.2.0
 soupsieve==2.3.1
 spyse-python==2.2.3
-sqlparse==0.4.1
+sqlparse==0.4.2
 starlette==0.16.0
 tabulate==0.8.9
 termcolor==1.1.0
@@ -111,12 +111,13 @@ typing-inspect==0.7.1
 typing_extensions==4.0.0
 tzdata==2021.5
 ujson==4.3.0
-urllib3==1.26.2
+urllib3==1.26.5
 uvicorn==0.15.0
 virtualenv==20.13.1
 wcwidth==0.2.5
-websockets==9.1
+websockets==10.0
 Werkzeug==1.0.1
 XlsxWriter==3.0.2
 yarl==1.7.2
 zipp==3.6.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
