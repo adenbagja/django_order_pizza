@@ -35,7 +35,7 @@ delegator.py==0.1.1
 distlib==0.3.4
 Django==4.0.2
 dnspython==2.1.0
-fastapi==0.70.0
+fastapi==0.109.1
 filelock==3.6.0
 fire==0.4.0
 Flask==1.1.2
