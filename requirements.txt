@@ -106,7 +106,7 @@ tabulate==0.8.9
 termcolor==1.1.0
 terminaltables==3.1.0
 token-bucket==0.2.0
-tqdm==4.62.3
+tqdm==4.66.3
 typing-inspect==0.7.1
 typing_extensions==4.0.0
 tzdata==2021.5
