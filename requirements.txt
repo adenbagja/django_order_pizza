@@ -48,7 +48,7 @@ idna==2.10
 importlib-metadata==4.8.2
 iteration-utilities==0.11.0
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jira==2.0.0
 -e git+ssh://git@source.golabs.io/qa/ci-tools-and-scripts/kakarot-cli.git@d953847d3c555a7dd0e954129c517be760d51f8e#egg=Kakarot
 limiter==0.1.2
@@ -65,7 +65,7 @@ oauthlib==3.1.0
 objection==1.11.0
 pbr==5.5.1
 pexpect==4.8.0
-Pillow==9.1.0
+Pillow==9.1.1
 platformdirs==2.5.1
 prompt-toolkit==3.0.28
 psycopg2-binary==2.9.3
@@ -100,7 +100,7 @@ slowapi==0.1.5
 sniffio==1.2.0
 soupsieve==2.3.1
 spyse-python==2.2.3
-sqlparse==0.4.1
+sqlparse==0.4.2
 starlette==0.16.0
 tabulate==0.8.9
 termcolor==1.1.0
@@ -111,7 +111,7 @@ typing-inspect==0.7.1
 typing_extensions==4.0.0
 tzdata==2021.5
 ujson==4.3.0
-urllib3==1.26.2
+urllib3==1.26.5
 uvicorn==0.15.0
 virtualenv==20.13.1
 wcwidth==0.2.5
