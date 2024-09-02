@@ -42,7 +42,7 @@ Flask==1.1.2
 frida==15.1.14
 frida-tools==10.4.1
 frozenlist==1.2.0
-gunicorn==20.1.0
+gunicorn==21.2.0
 h11==0.12.0
 idna==2.10
 importlib-metadata==4.8.2
@@ -65,7 +65,7 @@ oauthlib==3.1.0
 objection==1.11.0
 pbr==5.5.1
 pexpect==4.8.0
-Pillow==9.1.0
+Pillow==9.3.0
 platformdirs==2.5.1
 prompt-toolkit==3.0.28
 psycopg2-binary==2.9.3
