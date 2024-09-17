@@ -101,7 +101,7 @@ sniffio==1.2.0
 soupsieve==2.3.1
 spyse-python==2.2.3
 sqlparse==0.4.1
-starlette==0.16.0
+starlette==0.25.0
 tabulate==0.8.9
 termcolor==1.1.0
 terminaltables==3.1.0
@@ -116,7 +116,7 @@ uvicorn==0.15.0
 virtualenv==20.13.1
 wcwidth==0.2.5
 websockets==9.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 XlsxWriter==3.0.2
 yarl==1.7.2
 zipp==3.6.0
