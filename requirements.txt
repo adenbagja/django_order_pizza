@@ -38,7 +38,7 @@ dnspython==2.1.0
 fastapi==0.70.0
 filelock==3.6.0
 fire==0.4.0
-Flask==1.1.2
+Flask==2.2.5
 frida==15.1.14
 frida-tools==10.4.1
 frozenlist==1.2.0
